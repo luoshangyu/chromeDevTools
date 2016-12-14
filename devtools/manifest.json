@@ -1,0 +1,20 @@
+{
+  "name": "Har Getter",
+  "version": "1.1",
+  "minimum_chrome_version": "10.0",
+  "description": "Har reporter",
+  "devtools_page": "devtools.html",
+  "content_scripts": [
+      {
+          "js": ["jquery-3.1.0.min.js"],
+          "matches": ["http://*/*", "https://*/*"]
+      }
+  ],
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+	"tabs"
+  ],
+  "manifest_version": 2
+}
